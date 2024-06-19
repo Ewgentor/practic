@@ -1,0 +1,116 @@
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 0px 142px 0px 142px;
+}
+
+header {
+  display: flex;
+  padding: 69px 0px 69px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-nav .logo {
+  display: flex;
+  align-items: center;
+  padding-right: 187px;
+}
+header .logo-nav .logo a {
+  display: flex;
+  align-items: center;
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 54.65px;
+  color: black;
+  padding-left: 16px;
+}
+header .logo-nav .navbar ul {
+  display: flex;
+}
+header .logo-nav .navbar ul li + li {
+  padding-left: 52px;
+}
+header .logo-nav .navbar ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header .logo-nav .navbar ul li img {
+  padding-left: 5px;
+}
+header .logo-nav .navbar ul li a {
+  color: #274C5B;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+header .search-contact {
+  display: flex;
+}
+header .search-contact .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .search-contact .search input {
+  background-color: #80B857;
+  padding: 25px 80px 25px 30px;
+  border-radius: 56px;
+  border-width: 0px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.09px;
+  text-align: left;
+  color: #274C5B;
+}
+header .search-contact .search img {
+  position: absolute;
+  right: 6px;
+  cursor: pointer;
+}
+header .search-contact .contact {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+  border: 1px solid #E0E0E0;
+  border-radius: 56px;
+}
+header .search-contact .contact img {
+  padding: 0px 10px 0px 13px;
+}
+header .search-contact .contact p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.09px;
+  color: #274C5B;
+  padding-right: 16px;
+}/*# sourceMappingURL=stryle.css.map */
