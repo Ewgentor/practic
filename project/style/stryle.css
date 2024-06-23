@@ -1,0 +1,578 @@
+.footer .about .logo, header .logo-nav .logo {
+  display: flex;
+  align-items: center;
+}
+.footer .about .logo a, header .logo-nav .logo a {
+  display: flex;
+  align-items: center;
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 54.65px;
+  color: black;
+  padding-left: 16px;
+}
+
+.section2 .cards .right-card p, .section2 .cards .left-card p {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 44px;
+  color: #80B857;
+}
+
+.section3 .lead-desc .tagline-text .subtitle, .section3 .lead-text-subtitle {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  color: #525C60;
+}
+
+.footer .contacts .footer-subtitle span.subtitle-text a, .footer .contacts .footer-subtitle span.subtitle-text, .footer .contacts .footer-subtitle {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 29.7px;
+  color: #525c60;
+}
+
+.footer .contacts .footer-title {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.16px;
+  color: #274C5B;
+}
+
+.subscribe .slogan .widgets button:hover, .section1 .title button:hover {
+  background-color: #679745;
+}
+.subscribe .slogan .widgets button:active, .section1 .title button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.catalog-section1 p, .section1 .title .text {
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 73px;
+  color: #274C5B;
+}
+
+.footer .contacts .footer-subtitle .underline, header .logo-nav .navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 400;
+  color: blue;
+  transition: all 0.35s ease;
+}
+.footer .contacts .footer-subtitle .underline::before, header .logo-nav .navbar ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #80B857;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.footer .contacts .footer-subtitle .underline:hover, header .logo-nav .navbar ul li a:hover {
+  color: #80B857;
+}
+.footer .contacts .footer-subtitle .underline:hover::before, header .logo-nav .navbar ul li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1.1);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  padding: 69px 142px 69px 142px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: rgb(241, 241, 241);
+  opacity: 0.9;
+}
+header .logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-nav .logo {
+  padding-right: 187px;
+}
+header .logo-nav .navbar ul {
+  display: flex;
+}
+header .logo-nav .navbar ul li + li {
+  padding-left: 52px;
+}
+header .logo-nav .navbar ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header .logo-nav .navbar ul li img {
+  padding-left: 5px;
+}
+header .logo-nav .navbar ul li a {
+  color: #274C5B;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+header .search-contact {
+  display: flex;
+}
+header .search-contact .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .search-contact .search input {
+  background-color: #80B857;
+  padding: 25px 80px 25px 30px;
+  border-radius: 56px;
+  border-width: 0px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.09px;
+  text-align: left;
+  color: #ffffff;
+  outline: none;
+}
+header .search-contact .search input::-moz-placeholder {
+  color: #ffffff;
+}
+header .search-contact .search input::placeholder {
+  color: #ffffff;
+}
+header .search-contact .search button {
+  position: absolute;
+  right: 10px;
+  padding: 18px;
+  background: #43644F;
+  font-size: 19px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .search-contact .search button:hover {
+  background-color: #274C5B;
+}
+header .search-contact .contact {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+  border: 1px solid #E0E0E0;
+  border-radius: 56px;
+}
+header .search-contact .contact img {
+  padding: 0px 10px 0px 13px;
+}
+header .search-contact .contact a {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.09px;
+  color: #274C5B;
+  padding-right: 16px;
+}
+
+.section1 {
+  padding-top: 209px;
+}
+.section1 .title {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  width: 530px;
+}
+.section1 .title .text {
+  padding-bottom: 23px;
+}
+.section1 .title .btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #80B857;
+  padding: 28px 39px 28px 39px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  color: #274C5B;
+  border: none;
+  border-radius: 16px;
+}
+.section1 .title .btn img {
+  padding-left: 10px;
+}
+
+.section2 .cards {
+  display: flex;
+  padding: 8%;
+  justify-content: space-between;
+}
+.section2 .cards .left-card {
+  position: relative;
+  transition: 0.5s;
+}
+.section2 .cards .left-card:hover {
+  transform: scale(1.2);
+}
+.section2 .cards .left-card p {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 45%;
+}
+.section2 .cards .right-card {
+  transition: 0.5s;
+  position: relative;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+}
+.section2 .cards .right-card:hover {
+  transform: scale(1.2);
+}
+.section2 .cards .right-card img {
+  border-radius: 10px;
+}
+.section2 .cards .right-card p {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 40%;
+}
+
+.section3 {
+  display: flex;
+  background-color: #F2F2F0;
+  margin-bottom: 49px;
+}
+.section3 .lead {
+  align-content: center;
+  padding-left: 3%;
+}
+.section3 .lead-text {
+  padding-bottom: 46px;
+}
+.section3 .lead-text-title {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58.59px;
+  color: #274C5B;
+  padding-bottom: 15px;
+}
+.section3 .lead-desc .tagline {
+  display: flex;
+  padding-bottom: 16px;
+  align-items: center;
+}
+.section3 .lead-desc .tagline-text {
+  padding-left: 2%;
+}
+.section3 .lead-desc .tagline-text .title {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 29.3px;
+  color: #274C5B;
+}
+.subscribe .slogan {
+  display: flex;
+  justify-content: space-between;
+  padding: 83px 71px 127px 71px;
+  margin: 0px 260px 96px 260px;
+  border-radius: 30px;
+  background-color: #80B857;
+}
+.subscribe .slogan .title {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58.59px;
+  color: #ffffff;
+}
+.subscribe .slogan .widgets {
+  display: flex;
+  align-items: center;
+}
+.subscribe .slogan .widgets input {
+  padding: 27.5px 99px 31.5px 23px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  color: #111111;
+}
+.subscribe .slogan .widgets input::-moz-placeholder {
+  color: #111111;
+}
+.subscribe .slogan .widgets input::placeholder {
+  color: #111111;
+}
+.subscribe .slogan .widgets button {
+  margin: 12px;
+  padding: 28px 47px 28px 47px;
+  border-radius: 16px;
+  gap: 10px;
+  border: none;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  color: #ffffff;
+  background-color: #274C5B;
+}
+.subscribe .slogan .widgets button:hover {
+  background-color: #667e55;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 311px 218px 311px;
+}
+.footer .contacts {
+  padding-right: 50px;
+  text-align: end;
+  border-right: 1px solid #D4D4D4;
+}
+.footer .contacts .footer-title {
+  padding-bottom: 32px;
+}
+.footer .contacts .footer-subtitle {
+  font-weight: 700;
+}
+.footer .contacts .footer-subtitle span.subtitle-text {
+  font-weight: 400;
+}
+.footer .contacts .footer-subtitle span.subtitle-text a {
+  font-weight: 400;
+}
+.footer .about .logo {
+  padding-bottom: 23px;
+  align-items: center;
+  justify-content: center;
+}
+.footer .about .info-text {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  text-align: center;
+  color: #525C60;
+  padding-bottom: 29px;
+}
+.footer .about .info .info-links {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .about .info .info-links .circle {
+  position: relative;
+}
+.footer .about .info .info-links img {
+  z-index: -10;
+}
+.footer .about .info .info-links i {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #274C5B;
+}
+.footer .utility {
+  padding-left: 50px;
+  padding-right: 0px;
+  text-align: start;
+  border-left: 1px solid #D4D4D4;
+  border-right: 0px;
+}
+.footer .utility .footer-subtitle {
+  line-height: 49.12px;
+}
+
+.catalog-section1 {
+  padding-bottom: 123px;
+  padding-top: 209px;
+}
+.catalog-section1 .title {
+  position: absolute;
+  right: 15%;
+  top: 32%;
+}
+.catalog-section2 {
+  padding: 0px 267px 0px 267px;
+}
+.catalog-section2 .cards {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 91px;
+}
+.catalog-section2 .cards .card {
+  border-radius: 20px;
+  border: 3px solid #80B857;
+  transition: 0.5s;
+}
+.catalog-section2 .cards .card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px #80B857;
+}
+.catalog-section2 .cards .card-img {
+  position: relative;
+}
+.catalog-section2 .cards .card-img img {
+  border-radius: 10px;
+}
+.catalog-section2 .cards .card-img i {
+  position: absolute;
+  cursor: pointer;
+  right: 4%;
+  top: 7%;
+}
+.catalog-section2 .cards .card-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #80B857;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.catalog-section2 .cards .card-text-name {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #274C5B;
+}
+.catalog-section2 .cards .card-text-price {
+  font-family: Pacifico;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #274C5B;
+}
+
+.news-section1 {
+  padding-top: 209px;
+  padding-bottom: 107px;
+}
+.news-section1-title {
+  position: relative;
+}
+.news-section1-title p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 82.03px;
+  color: #80B857;
+}
+.news-cards-all {
+  padding: 0px 171px 0px 171px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 132px;
+}
+.news-cards-all-card {
+  position: relative;
+}
+.news-cards-all-card img {
+  z-index: 1;
+}
+.news-cards-all-card .card-date {
+  top: 6%;
+  left: 4%;
+  position: absolute;
+  z-index: 2;
+}
+.news-cards-all-card .card-date p {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 29.3px;
+  text-align: center;
+  color: #274C5B;
+  position: absolute;
+  padding-top: 10px;
+}
+.news-cards-all-card .card-date img {
+  position: absolute;
+}
+.news-cards-all-card .card-text {
+  padding: 54px 57px 54px 57px;
+  background-color: #ffffff;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 30px;
+  width: 90%;
+  margin: 0px 0px 15px 32px;
+  position: absolute;
+}
+.news-cards-all-card .card-text .card-title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33.08px;
+  color: #274C5B;
+  padding-bottom: 19px;
+}
+.news-cards-all-card .card-text .card-subtitle {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+}
+.news-cards-all-card .card-text .card-subtitle a {
+  padding-right: 11px;
+  color: #274C5B;
+}
+
+.not-found-title {
+  font-family: Inter;
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 154.91px;
+  text-align: center;
+  color: #274C5B;
+  padding: 450px 0px 300px 0px;
+}/*# sourceMappingURL=stryle.css.map */
