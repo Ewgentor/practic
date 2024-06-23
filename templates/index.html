@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/practic/project/style/stryle.css">
+    <link rel="stylesheet" href="/style/stryle.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +12,17 @@
     <script src="https://kit.fontawesome.com/0a764cddf7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="catalog">
+    <div class="main">
         <header class="header conteiner">
             <div class="logo-nav">
                 <div class="logo">
-                    <a href="index.html"><img src="/practic/project/img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="/img/logo.png" alt=""></a>
                     <a href="index.html">Microsel</a>
                 </div>
                 <nav class="navbar">
                     <ul>
                         <li><a href="">О нас</a></li>
-                        <li><a href="catalog.html">Каталог</a> <!-- <img src="/practic/project/img/Vector.png" alt=""> --> </li>
+                        <li><a href="catalog.html">Каталог</a> <!-- <img src="/img/Vector.png" alt=""> --> </li>
                         <li><a href="">Скидки</a></li>
                         <li><a href="news.html">Новости</a></li>
                     </ul>
@@ -34,107 +34,86 @@
                     <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                 </div>
                 <div class="contact">
-                    <img src="/practic/project/img/Cart Icon.png" alt="">
+                    <img src="/img/Cart Icon.png" alt="">
                     <a href="">Контакты</a>
                 </div>
             </div>
         </header>
-
-        <section class="catalog-section1">
-            <img src="/practic/project/img-catalog/catalog-section1.png" alt="" width="100%">
+        
+        <section class="section1 conteiner">
+            <img src="/img/section1.png" alt="" width="100%">
             <div class="title">
-                <p>
-                    Каталог
+                <p class="text">
+                    Первый в РФ магазин микрозелени
                 </p>
+                <a href="catalog.html">
+                    <button class="btn">
+                        В КАТАЛОГ
+                        <img src="/img/btn1.png" alt="">
+                    </button>
+                </a>
             </div>
         </section>
 
-        <section class="catalog-section2 conteiner">
+        <section class="section2 conteiner">
             <div class="cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/practic/project/img-catalog/card1.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Аморант
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
+                <div class="left-card">
+                    <img src="/img/left-card.png" alt="">
+                    <p>
+                        Все популярные виды микрозелени
+                    </p>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/practic/project/img-catalog/card2.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Базилик
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/practic/project/img-catalog/card3.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Горох
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
+                <div class="right-card">
+                    <img src="/img/right-card.png" alt="">
+                    <p>
+                        Скидка 20% на первый заказ
+                    </p>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/practic/project/img-catalog/card4.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
+        </section>
+
+        <section class="section3 conteiner">
+            <img src="/img/Ryka.png" alt="" width="50%">
+            <div class="lead">
+                <div class="lead-text">
+                    <div class="lead-text-title">
+                        <p>Мы работаем только с <br> 
+                        качественным сырьём от <br> 
+                        местных фермеров</p>
                     </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Горчица
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/practic/project/img-catalog/card5.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Дайкон
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
+                    <div class="lead-text-subtitle">
+                        <p>Работа с местными фермерами приносит производственным компаниям <br>
+                        преимущество в виде высококачественного сырья, укрепляет местное <br>
+                        сообщество, снижает экологический след и способствует устойчивости <br>
+                        цепочки поставок, обеспечивая надежность и прозрачность.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/practic/project/img-catalog/card6.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
+                <div class="lead-desc">
+                    <div class="tagline">
+                        <img src="/img/lead-top.png" alt="">
+                        <div class="tagline-text">
+                            <p class="title">
+                                Только натуральная продукция
+                            </p>
+                            <p class="subtitle">
+                                Полагаясь на природу, мы предлагаем продукты <br>
+                                без искусственных добавок, гарантируя вам <br>
+                                чистоту и качество.
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Рукола
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
+                    <div class="tagline">
+                        <img src="/img/lead-bottom.png" alt="">
+                        <div class="tagline-text">
+                            <p class="title">
+                                Высокие стандарты качества
+                            </p>
+                            <p class="subtitle">
+                                На каждом этапе производства мы стремимся к <br>
+                                совершенству,  чтобы вы могли наслаждаться <br>
+                                продуктами с превосходным качеством и вкусом.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,7 +156,7 @@
             </div>
             <div class="about">
                 <div class="logo">
-                    <a href="index.html"><img src="/practic/project/img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="/img/logo.png" alt=""></a>
                     <a href="index.html">Microsel</a>
                 </div>
                 <div class="info">
@@ -187,19 +166,19 @@
                     </div>
                     <div class="info-links">
                         <a href="https://github.com/" class="circle">
-                            <img src="/practic/project/img/footer icon.png" alt="">
+                            <img src="/img/footer icon.png" alt="">
                             <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="https://mail.ru" class="circle">
-                            <img src="/practic/project/img/footer icon.png" alt="">
+                            <img src="/img/footer icon.png" alt="">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                         <a href="https://vk.com" class="circle">
-                            <img src="/practic/project/img/footer icon.png" alt="">
+                            <img src="/img/footer icon.png" alt="">
                             <i class="fa-brands fa-vk"></i>
                         </a>
                         <a href="https://telegram.org/" class="circle">
-                            <img src="/practic/project/img/footer icon.png" alt="">
+                            <img src="/img/footer icon.png" alt="">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
                     </div>
@@ -211,7 +190,7 @@
                 </div>
                 <div class="footer-subtitle">
                     <p>
-                        <span class="subtitle-text">
+                        <span class="subtitle-text ">
                             <a class="underline" href="https://bgitu.ru/">BGITU</a> <br>
                             <a class="underline" href="404.html">404 Not Found</a> <br>
                             <a class="underline" href="catalog.html">Catalog</a> <br>
@@ -224,25 +203,4 @@
         </footer>
     </div>
 </body>
-
-<script>
-    let hearts = document.querySelectorAll(".fa-heart");
-    let heartState = [];
-
-    hearts.forEach((heart, index) => {
-        heartState[index] = false;
-        heart.onclick = () => {
-            if (!heartState[index]) {
-                heart.className = "fa-solid fa-heart fa-2xl";
-                heart.style.color = "#f02828";
-                heartState[index] = true;
-            } else {
-                heart.className = "fa-regular fa-heart fa-2xl";
-                heart.style.color = "";
-                heartState[index] = false;
-            }
-        }
-    });
-</script>
-
 </html>
