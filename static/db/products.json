@@ -29,6 +29,41 @@
       "name": "Рукола",
       "price": 150,
       "img": "/static/img-catalog/card6.png"
+    },
+    "7": {
+      "name": "Аморант",
+      "price": 150,
+      "img": "/static/img-catalog/card1.png"
+    },
+    "8": {
+      "name": "Базилик",
+      "price": 150,
+      "img": "/static/img-catalog/card2.png"
+    },
+    "9": {
+      "name": "Горох",
+      "price": 150,
+      "img": "/static/img-catalog/card3.png"
+    },
+    "10": {
+      "name": "Горчица",
+      "price": 150,
+      "img": "/static/img-catalog/card4.png"
+    },
+    "11": {
+      "name": "Дайкон",
+      "price": 150,
+      "img": "/static/img-catalog/card5.png"
+    },
+    "12": {
+      "name": "Рукола",
+      "price": 150,
+      "img": "/static/img-catalog/card6.png"
+    },
+    "13": {
+      "name": "Рукола",
+      "price": 150,
+      "img": "/static/img-catalog/card6.png"
     }
   }
 }
