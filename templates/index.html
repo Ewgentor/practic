@@ -21,7 +21,7 @@
                 </div>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="">О нас</a></li>
+                        <li><a id="scrollToBlock" href="">О нас</a></li>
                         <li><a href="catalog">Каталог</a> <!-- <img src="/static/img/Vector.png" alt=""> --> </li>
                         <li><a href="">Скидки</a></li>
                         <li><a href="news">Новости</a></li>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="contact">
                     <img src="/static/img/Cart Icon.png" alt="">
-                    <a href="">Контакты</a>
+                    <a href="">Вход</a>
                 </div>
             </div>
         </header>
@@ -72,7 +72,7 @@
             </div>
         </section>
 
-        <section class="section3 conteiner">
+        <section id="targetBlock" class="section3 conteiner">
             <img src="/static/img/Ryka.png" alt="" width="50%">
             <div class="lead">
                 <div class="lead-text">
@@ -203,4 +203,13 @@
         </footer>
     </div>
 </body>
+
+<script>
+    document.getElementById("scrollToBlock").addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetBlock = document.getElementById("targetBlock");
+    targetBlock.scrollIntoView({ behavior: "smooth" });
+});
+</script>
+
 </html>
