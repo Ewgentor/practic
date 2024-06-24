@@ -125,7 +125,7 @@ header .logo-nav {
   align-items: center;
 }
 header .logo-nav .logo {
-  padding-right: 187px;
+  padding-right: 140px;
 }
 header .logo-nav .navbar ul {
   display: flex;
@@ -441,9 +441,9 @@ header .search-contact .contact a {
 }
 .catalog-section2 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 90px;
+  gap: 88px;
   padding-bottom: 91px;
 }
 .catalog-section2 .cards .card {

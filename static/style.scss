@@ -166,7 +166,7 @@ header{
 
         & .logo{
             @extend %logo;
-            padding-right: 187px;
+            padding-right: 140px;
         }
     
         & .navbar{
@@ -628,9 +628,9 @@ header{
         & .cards{
 
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
-            gap: 90px;
+            gap: 88px;
             padding-bottom: 91px;
             
 
