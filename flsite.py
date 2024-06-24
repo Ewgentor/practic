@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
+import json
+
 
 app = Flask(__name__)
 
@@ -10,7 +12,9 @@ def index():
 
 @app.route("/catalog")
 def catalog():
-    return render_template('catalog.html')
+    with open('static/db/products.json', encoding='utf-8') as f:
+        data = json.load(f)['products']
+    return render_template('catalog.html', data=data)
 
 
 @app.route("/news")
