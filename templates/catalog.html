@@ -51,90 +51,22 @@
 
         <section class="catalog-section2 conteiner">
             <div class="cards">
+                {% for i in data.keys() %}
                 <div class="card">
                     <div class="card-img">
-                        <img src="/static/img-catalog/card1.png" alt="">
+                        <img src={{data[i]["img"]}} alt="">
                         <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
                     </div>
                     <div class="card-text">
                         <p class="card-text-name">
-                            Микрозелень <br> Аморант
+                            Микрозелень <br> {{data[i]["name"]}}
                         </p>
                         <p class="card-text-price">
-                            150 Руб
+                            {{data[i]["price"]}} Руб
                         </p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/static/img-catalog/card2.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Базилик
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/static/img-catalog/card3.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Горох
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/static/img-catalog/card4.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Горчица
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/static/img-catalog/card5.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Дайкон
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="/static/img-catalog/card6.png" alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
-                    </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> Рукола
-                        </p>
-                        <p class="card-text-price">
-                            150 Руб
-                        </p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
 
