@@ -1,8 +1,8 @@
-.footer .about .logo, header .logo-nav .logo {
+.sign-in .popup .popup-content .logo, .footer .about .logo, header .logo-nav .logo {
   display: flex;
   align-items: center;
 }
-.footer .about .logo a, header .logo-nav .logo a {
+.sign-in .popup .popup-content .logo a, .footer .about .logo a, header .logo-nav .logo a {
   display: flex;
   align-items: center;
   font-family: "Ribeye Marrow", serif;
@@ -45,10 +45,10 @@
   color: #274C5B;
 }
 
-.subscribe .slogan .widgets button:hover, .section1 .title button:hover {
+.sign-in .popup .popup-content .btn button:hover, .subscribe .slogan .widgets button:hover, .section1 .title button:hover {
   background-color: #679745;
 }
-.subscribe .slogan .widgets button:active, .section1 .title button:active {
+.sign-in .popup .popup-content .btn button:active, .subscribe .slogan .widgets button:active, .section1 .title button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -60,14 +60,21 @@
   color: #274C5B;
 }
 
-.footer .contacts .footer-subtitle .underline, header .logo-nav .navbar ul li a {
+.sign-in .popup .popup-content .excerpt, .sign-in .popup .popup-content .btn button, .sign-in .popup .popup-content .subtitles .subtitle-input input, .sign-in .popup .popup-content .subtitles .subtitle-text p {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+}
+
+.sign-in .popup .popup-content .excerpt a, .footer .contacts .footer-subtitle .underline, header .logo-nav .navbar ul li a {
   position: relative;
   text-decoration: none;
   font-weight: 400;
   color: blue;
   transition: all 0.35s ease;
 }
-.footer .contacts .footer-subtitle .underline::before, header .logo-nav .navbar ul li a::before {
+.sign-in .popup .popup-content .excerpt a::before, .footer .contacts .footer-subtitle .underline::before, header .logo-nav .navbar ul li a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -79,10 +86,10 @@
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-.footer .contacts .footer-subtitle .underline:hover, header .logo-nav .navbar ul li a:hover {
+.sign-in .popup .popup-content .excerpt a:hover, .footer .contacts .footer-subtitle .underline:hover, header .logo-nav .navbar ul li a:hover {
   color: #80B857;
 }
-.footer .contacts .footer-subtitle .underline:hover::before, header .logo-nav .navbar ul li a:hover::before {
+.sign-in .popup .popup-content .excerpt a:hover::before, .footer .contacts .footer-subtitle .underline:hover::before, header .logo-nav .navbar ul li a:hover::before {
   visibility: visible;
   transform: scaleX(1.1);
 }
@@ -578,4 +585,96 @@ header .search-contact .contact a {
   text-align: center;
   color: #274C5B;
   padding: 450px 0px 300px 0px;
+}
+
+.sign-in .popup {
+  position: fixed;
+  width: 836px;
+  height: 100%;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 50;
+}
+.sign-in .popup .popup-content {
+  padding: 152px 132px 132px 132px;
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 20px 1px #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in .popup .popup-content .img {
+  position: absolute;
+  right: 12%;
+  top: 2%;
+}
+.sign-in .popup .popup-content .logo {
+  padding-bottom: 10%;
+}
+.sign-in .popup .popup-content .title {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.88px;
+  color: #274C5B;
+  padding-bottom: 50px;
+}
+.sign-in .popup .popup-content .subtitles .subtitle {
+  padding-bottom: 60px;
+}
+.sign-in .popup .popup-content .subtitles .subtitle-text {
+  padding-bottom: 5px;
+}
+.sign-in .popup .popup-content .subtitles .subtitle-text p {
+  color: #274C5B;
+}
+.sign-in .popup .popup-content .subtitles .subtitle-input input {
+  width: 566px;
+  padding: 37px 37px 37px 14px;
+  border-radius: 10px;
+  color: #111111;
+}
+.sign-in .popup .popup-content .subtitles .subtitle-input input::-moz-placeholder {
+  color: #274C5B;
+  opacity: 50%;
+}
+.sign-in .popup .popup-content .subtitles .subtitle-input input::placeholder {
+  color: #274C5B;
+  opacity: 50%;
+}
+.sign-in .popup .popup-content .subtitles .subtitle .password {
+  position: relative;
+}
+.sign-in .popup .popup-content .subtitles .subtitle .password .password-control {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  width: 40px;
+  height: 33px;
+  background: url(/static/svg/eye-regular.svg) 0 0 no-repeat;
+  transform: translate(-50%, -50%);
+}
+.sign-in .popup .popup-content .subtitles .subtitle .password .password-control.view {
+  background: url(/static/svg/eye-slash-regular.svg) 0 0 no-repeat;
+}
+.sign-in .popup .popup-content .btn button {
+  color: #274C5B;
+  padding: 40px 160px 40px 160px;
+  background-color: #80B857;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.sign-in .popup .popup-content .excerpt {
+  padding-top: 79px;
+  display: flex;
+  color: #274C5B;
+}
+.sign-in .popup .popup-content .excerpt p {
+  padding-right: 10px;
+}
+.sign-in .popup .popup-content .excerpt a {
+  color: #274C5B;
 }/*# sourceMappingURL=style.css.map */

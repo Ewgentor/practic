@@ -83,8 +83,12 @@ $green: #80B857;
     color: $text-color;
 }
 
-
-
+%line-h28{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+}
 
 %underline{
     position: relative;
@@ -829,5 +833,137 @@ header{
         color: $text-color;
 
         padding: 450px 0px 300px 0px;
+    }
+}
+
+//Вход//
+
+.sign-in{
+   
+    & .popup{
+        position: fixed;
+        width: 836px;
+        height: 100%;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        z-index: 50;
+
+        & .popup-content{
+            
+            padding: 152px 132px 132px 132px;
+            background-color: $white;
+            box-shadow: inset 0px 0px 20px 1px #111111;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .img{
+                position: absolute;
+                right: 12%;
+                top: 2%;
+            }
+
+            & .logo{
+                @extend %logo;
+                padding-bottom: 10%;
+            }
+
+            & .title{
+                font-family: Roboto;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 46.88px;
+                color: $text-color;
+                padding-bottom: 50px;
+            }
+
+            & .subtitles{
+
+                & .subtitle{
+                    padding-bottom: 60px;
+
+                    &-text{
+                        padding-bottom: 5px;
+
+                        & p{
+                            @extend %line-h28;
+                            color: $text-color;
+                        }
+                    }
+
+                    &-input{
+
+                        & input{
+
+                            width: 566px;
+                            padding: 37px 37px 37px 14px;
+                            border-radius: 10px;
+
+                            @extend %line-h28;
+                            color: $black;
+
+                            &::placeholder{
+                                color: $text-color;
+                                opacity: 50%;
+                            }
+                        }
+                    }
+
+                    & .password {
+                        position: relative;
+
+                        & .password-control {
+                            position: absolute;
+                            top: 50%;
+                            right: 8%;
+                            width: 40px;
+                            height: 33px;
+                            background: url(/static/svg/eye-regular.svg) 0 0 no-repeat;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        & .password-control.view {
+                            background: url(/static/svg/eye-slash-regular.svg) 0 0 no-repeat;
+                        }
+                    }
+                }
+            }
+
+            & .btn{
+                @extend %shadowbtn;
+
+                & button{
+                    @extend %line-h28;
+                    color: $text-color;
+
+                    padding: 40px 160px 40px 160px;
+                    background-color: $green;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+            & .excerpt{
+
+                padding-top: 79px;
+                display: flex;
+
+                @extend %line-h28;
+                color: $text-color;
+
+                & p{
+                    padding-right: 10px;
+                }
+
+                & a{
+                    @extend %underline;
+                    color: $text-color;
+                }
+            }
+        }
     }
 }

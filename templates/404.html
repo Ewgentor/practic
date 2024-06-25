@@ -35,7 +35,7 @@
                 </form>
                 <div class="contact">
                     <img src="/static/img/Cart Icon.png" alt="">
-                    <a href="">Контакты</a>
+                    <a href="javascript:PopUpShow()">Вход</a>
                 </div>
             </div>
         </header>
@@ -129,5 +129,96 @@
             </div>
         </footer>
     </div>
+
+    <section class="sign-in">
+        <div class="popup" id="popup1">
+            <div class="popup-content">
+                <div class="img">
+                    <img src="/static/img-pop/Star 8.png" alt="">
+                </div>
+                <div class="logo">
+                    <a href="/"><img src="/static/img/logo.png" alt=""></a>
+                    <a href="/">Microsel</a>
+                </div>
+                <div class="title">
+                    <p>
+                        Вход
+                    </p>
+                </div>
+                <div class="subtitles">
+                    <div class="subtitle">
+                        <div class="subtitle-text">
+                            <p>
+                                Email
+                            </p>
+                        </div>
+                        <div class="subtitle-input">
+                            <input type="email" maxlength="30" size="30" placeholder="Введите ваш e-mail адресс" required>
+                        </div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="subtitle-text">
+                            <p>
+                                Пароль
+                            </p>
+                        </div>
+                        <div class="subtitle-input password">
+                            <input type="password" id="password-input" name="password" maxlength="30" size="30" placeholder="Введите ваш пароль" required>
+                            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>
+                        Войти
+                    </button>
+                </div>
+                <div class="excerpt">
+                    <p>
+                        У вас ещё нет аккаунта?
+                    </p>
+                    <a href="">Зарегистрироваться</a>
+                </div>
+            </div>
+            <a href="javascript:PopUpHide()"></a>
+        </div>
+    </section>
 </body>
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+
+    $(document).click(function(e){
+
+    if($(e.target).closest('#popup1').length != 0) return false;
+    $('#popup1').hide();
+    });
+</script>
+
+<script>
+function show_hide_password(target){
+	var input = document.getElementById('password-input');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+</script>
+
 </html>

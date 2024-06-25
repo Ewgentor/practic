@@ -35,7 +35,7 @@
                 </form>
                 <div class="contact">
                     <img src="/static/img/Cart Icon.png" alt="">
-                    <a href="">Контакты</a>
+                    <a href="">Вход</a>
                 </div>
             </div>
         </header>
@@ -69,7 +69,11 @@
                     </div>
                     {% endfor %}
                 {% else %}
-                Товары не найдены!
+                <div class="error-found">
+                    <h1>
+                        Товары не найдены!
+                    </h1>
+                </div>
                 {% endif %}
             </div>
         </section>

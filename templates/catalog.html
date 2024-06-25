@@ -35,7 +35,7 @@
                 </form>
                 <div class="contact">
                     <img src="/static/img/Cart Icon.png" alt="">
-                    <a href="">Контакты</a>
+                    <a href="">Вход</a>
                 </div>
             </div>
         </header>
@@ -70,7 +70,9 @@
             </div>
             <div>
                 {% for i in range(1, total_pages + 1) %}
-                    <a href="/catalog?page={{ i }}">{{ i }}</a>
+                    <a href="/catalog?page={{ i }}">
+                        <p>{{ i }}</p>
+                    </a>
                 {% endfor %}
             </div>
         </section>
