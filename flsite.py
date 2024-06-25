@@ -18,7 +18,7 @@ def index():
 def catalog():
     page = request.args.get('page', default=1, type=int)
     products = [product for product in data.values()]
-    per_page = 6  # количество товаров на одной странице
+    per_page = 6
     total_pages = len(products) // per_page + 1
     start = (page - 1) * per_page
     end = start + per_page
