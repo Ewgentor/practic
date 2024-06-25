@@ -16,7 +16,15 @@ def index():
 
 @app.route("/catalog")
 def catalog():
-    return render_template('catalog.html', data=data)
+    page = request.args.get('page', default=1, type=int)
+    products = [product for product in data.values()]
+    per_page = 6  # количество товаров на одной странице
+    total_pages = len(products) // per_page + 1
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_products = products[start:end]
+    return render_template('catalog.html', products=paginated_products, total_pages=total_pages)
+    # return render_template('catalog.html', data=data)
 
 
 @app.route("/news")

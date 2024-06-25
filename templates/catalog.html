@@ -51,21 +51,26 @@
 
         <section class="catalog-section2 conteiner">
             <div class="cards">
-                {% for i in data.keys() %}
+                {% for el in products %}
                 <div class="card">
                     <div class="card-img">
-                        <img src={{data[i]["img"]}} alt="">
+                        <img src={{el["img"]}} alt="">
                         <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
                     </div>
                     <div class="card-text">
                         <p class="card-text-name">
-                            Микрозелень <br> {{data[i]["name"]}}
+                            Микрозелень <br> {{el["name"]}}
                         </p>
                         <p class="card-text-price">
-                            {{data[i]["price"]}} Руб
+                            {{el["price"]}} Руб
                         </p>
                     </div>
                 </div>
+                {% endfor %}
+            </div>
+            <div>
+                {% for i in range(1, total_pages + 1) %}
+                    <a href="/catalog?page={{ i }}">{{ i }}</a>
                 {% endfor %}
             </div>
         </section>
