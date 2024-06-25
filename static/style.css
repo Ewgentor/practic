@@ -443,7 +443,7 @@ header .search-contact .contact a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 88px;
+  gap: 80px;
   padding-bottom: 91px;
 }
 .catalog-section2 .cards .card {
