@@ -29,10 +29,10 @@
                 </nav>
             </div>
             <div class="search-contact">
-                <div class="search">
-                    <input type="text" required minlength="1" maxlength="30" size="30" placeholder="Поиск..." name="search" required>
+                <form class="search" action="search" method="post">
+                    <input type="text" required minlength="1" maxlength="30" size="30" placeholder="Поиск..." name="query" required>
                     <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-                </div>
+                </form>
                 <div class="contact">
                     <img src="/static/img/Cart Icon.png" alt="">
                     <a href="">Контакты</a>
