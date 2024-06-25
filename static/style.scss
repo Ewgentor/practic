@@ -843,12 +843,13 @@ header{
     & .popup{
         position: fixed;
         width: 836px;
-        height: 100%;
-        top: 67%;
+        height: 150%;
+        top: 55%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-100%, -100%);
         overflow: hidden;
         z-index: 50;
+        scale: 0.5;
 
         & .popup-content{
             

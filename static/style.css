@@ -590,12 +590,13 @@ header .search-contact .contact a {
 .sign-in .popup {
   position: fixed;
   width: 836px;
-  height: 100%;
-  top: 67%;
+  height: 150%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-100%, -100%);
   overflow: hidden;
   z-index: 50;
+  scale: 0.5;
 }
 .sign-in .popup .popup-content {
   padding: 152px 132px 132px 132px;
