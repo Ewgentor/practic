@@ -68,12 +68,14 @@
                 </div>
                 {% endfor %}
             </div>
-            <div>
+            <div class="cards-list">
+                <i class="fa-solid fa-angle-left" style="color: #274C5B;"></i>
                 {% for i in range(1, total_pages + 1) %}
                     <a href="/catalog?page={{ i }}">
                         <p>{{ i }}</p>
                     </a>
                 {% endfor %}
+                <i class="fa-solid fa-angle-right" style="color: #274C5B;"></i>
             </div>
         </section>
 

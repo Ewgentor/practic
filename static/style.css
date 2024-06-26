@@ -60,7 +60,7 @@
   color: #274C5B;
 }
 
-.sign-in .popup .popup-content .excerpt, .sign-in .popup .popup-content .btn button, .sign-in .popup .popup-content .subtitles .subtitle-input input, .sign-in .popup .popup-content .subtitles .subtitle-text p {
+.sign-in .popup .popup-content .excerpt, .sign-in .popup .popup-content .btn button, .sign-in .popup .popup-content .subtitles .subtitle-input input, .sign-in .popup .popup-content .subtitles .subtitle-text p, .catalog-section2 .cards-list {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -495,6 +495,33 @@ header .search-contact .contact a {
   font-weight: 400;
   line-height: 36px;
   color: #274C5B;
+}
+.catalog-section2 .cards .error-found {
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 75px;
+  color: #274C5B;
+}
+.catalog-section2 .cards-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 62px;
+}
+.catalog-section2 .cards-list i {
+  display: flex;
+  align-items: center;
+  padding: 0px 4px 0px 4px;
+}
+.catalog-section2 .cards-list a + a {
+  margin-left: 76px;
+}
+.catalog-section2 .cards-list a {
+  color: #274C5B;
+  transition: 0.5s;
+}
+.catalog-section2 .cards-list a:hover {
+  transform: scale(1.5);
 }
 
 .news-section1 {
