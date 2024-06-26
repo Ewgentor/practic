@@ -870,7 +870,7 @@ header{
     }
 }
 
-//Вход//
+//Вход/Регистрация//
 
 
 .sign-in{
@@ -950,18 +950,22 @@ header{
                     & .password {
                         position: relative;
 
+                        & button{
+                            border: none;
+                        }
+
                         & .password-control {
                             position: absolute;
                             top: 50%;
                             right: 8%;
                             width: 40px;
                             height: 33px;
-                            background: url(/static/svg/eye-regular.svg) 0 0 no-repeat;
+                            background: url(/static/svg/eye-slash-regular.svg) 0 0 no-repeat;
                             transform: translate(-50%, -50%);
                         }
 
                         & .password-control.view {
-                            background: url(/static/svg/eye-slash-regular.svg) 0 0 no-repeat;
+                            background: url(/static/svg/eye-regular.svg) 0 0 no-repeat;
                         }
                     }
                 }
@@ -997,6 +1001,20 @@ header{
                 & a{
                     @extend %underline;
                     color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+.registr{
+    & .popup{
+        &-content{
+            & .subtitles{
+                & .subtitle{
+                    & .pt{
+                        margin-top: 69px;
+                    }
                 }
             }
         }

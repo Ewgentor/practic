@@ -674,17 +674,20 @@ header .search-contact .contact a {
 .sign-in .popup .popup-content .subtitles .subtitle .password {
   position: relative;
 }
+.sign-in .popup .popup-content .subtitles .subtitle .password button {
+  border: none;
+}
 .sign-in .popup .popup-content .subtitles .subtitle .password .password-control {
   position: absolute;
   top: 50%;
   right: 8%;
   width: 40px;
   height: 33px;
-  background: url(/static/svg/eye-regular.svg) 0 0 no-repeat;
+  background: url(/static/svg/eye-slash-regular.svg) 0 0 no-repeat;
   transform: translate(-50%, -50%);
 }
 .sign-in .popup .popup-content .subtitles .subtitle .password .password-control.view {
-  background: url(/static/svg/eye-slash-regular.svg) 0 0 no-repeat;
+  background: url(/static/svg/eye-regular.svg) 0 0 no-repeat;
 }
 .sign-in .popup .popup-content .btn button {
   color: #274C5B;
@@ -704,4 +707,8 @@ header .search-contact .contact a {
 }
 .sign-in .popup .popup-content .excerpt a {
   color: #274C5B;
+}
+
+.registr .popup-content .subtitles .subtitle .pt {
+  margin-top: 69px;
 }/*# sourceMappingURL=style.css.map */
