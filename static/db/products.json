@@ -25,15 +25,16 @@
       "price": 150,
       "img": "/static/img-catalog/card5.png"
     },
+
     "6": {
-      "name": "Рукола",
-      "price": 150,
-      "img": "/static/img-catalog/card6.png"
-    },
-    "7": {
       "name": "Аморант",
       "price": 150,
       "img": "/static/img-catalog/card1.png"
+    },
+    "7": {
+      "name": "Рукола",
+      "price": 150,
+      "img": "/static/img-catalog/card6.png"
     },
     "8": {
       "name": "Базилик",
@@ -41,14 +42,14 @@
       "img": "/static/img-catalog/card2.png"
     },
     "9": {
-      "name": "Горох",
-      "price": 150,
-      "img": "/static/img-catalog/card3.png"
-    },
-    "10": {
       "name": "Горчица",
       "price": 150,
       "img": "/static/img-catalog/card4.png"
+    },
+    "10": {
+      "name": "Горох",
+      "price": 150,
+      "img": "/static/img-catalog/card3.png"
     },
     "11": {
       "name": "Дайкон",
