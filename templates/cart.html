@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
     <title>Microsel</title>
     <link rel="icon" href="/static/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Ribeye+Marrow&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/0a764cddf7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="catalog">
+    <div class="cart">
         <header class="header conteiner">
             <div class="logo-nav">
                 <div class="logo">
@@ -41,65 +41,40 @@
             </div>
         </header>
 
-        <section class="catalog-section1">
-            <img src="/static/img-catalog/catalog-section1.png" alt="" width="100%">
-            <div class="title">
-                <p>
-                    Каталог
-                </p>
-            </div>
-        </section>
+        <div class="cart-main">
+            <div class="cart-main-title">
+                <div class="text">
 
-        <section class="catalog-section2 conteiner">
-            <div class="cards">
-                {% for el in products %}
-                <div class="card">
-                    <div class="card-img">
-                        <img src={{el["img"]}} alt="">
-                        <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
+                </div>
+                <div class="subtitle">
+
+                </div>
+            </div>
+            <div class="cart-main-card">
+                <img src="" alt="">
+                <div class="card-text">
+                    <div class="card-title">
+
                     </div>
-                    <div class="card-text">
-                        <p class="card-text-name">
-                            Микрозелень <br> {{el["name"]}}
+                    <div class="card-subtitle">
+
+                    </div>
+                </div>
+                <div class="card-price">
+                    <div class="card-plus">
+                        <img src="" alt="">
+                        <p>
+
                         </p>
-                        <div class="card-text-subtitle">
-                            <p class="card-text-subtitle-price">
-                                {{el["price"]}} Руб
-                            </p>  
-                            <form action="">
-                                <i class="fa-solid fa-circle-plus fa-xl" style="color: #274C5B;"></i>
-                            </form>
-                        </div>
+                        <img src="" alt="">
                     </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="cards-list">
-                <i class="fa-solid fa-angle-left" style="color: #274C5B;"></i>
-                {% for i in range(1, total_pages + 1) %}
-                    <a href="/catalog?page={{ i }}">
-                        <p>{{ i }}</p>
-                    </a>
-                {% endfor %}
-                <i class="fa-solid fa-angle-right" style="color: #274C5B;"></i>
-            </div>
-        </section>
-
-        <section class="subscribe conteiner">
-            <div class="slogan">
-                <div class="title">
-                    <p>Узнайте первыми <br>
-                        о новых акциях!</p>
-                </div>
-                <div class="widgets">
-                    <input type="email" id="email" pattern="" maxlength="30" size="30" placeholder="Введите ваш e-mail адресс" required>
-                    <button>
-                        Подписаться
-                    </button>
+                    <p>
+                        
+                    </p>
                 </div>
             </div>
-        </section>
-
+        </div>
+        
         <footer class="footer conteiner">
             <div class="contacts">
                 <div class="footer-title">
@@ -132,7 +107,7 @@
                     </div>
                     <div class="info-links">
                         <a href="https://github.com/" class="circle">
-                            <img src="static/img/footer icon.png" alt="">
+                            <img src="/static/img/footer icon.png" alt="">
                             <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="https://mail.ru" class="circle">
@@ -280,28 +255,7 @@
             <a href="javascript:PopUpHide2()"></a>
         </div>
     </section>
-
 </body>
-
-<script>
-    let hearts = document.querySelectorAll(".fa-heart");
-    let heartState = [];
-
-    hearts.forEach((heart, index) => {
-        heartState[index] = false;
-        heart.onclick = () => {
-            if (!heartState[index]) {
-                heart.className = "fa-solid fa-heart fa-2xl";
-                heart.style.color = "#f02828";
-                heartState[index] = true;
-            } else {
-                heart.className = "fa-regular fa-heart fa-2xl";
-                heart.style.color = "";
-                heartState[index] = false;
-            }
-        }
-    });
-</script>
 
 <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
 <script>
