@@ -31,6 +31,12 @@ def news():
     return render_template('news.html')
 
 
+# Илья, иди нахуй
+@app.route("/cart")
+def cart():
+    return render_template('cart.html')
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
