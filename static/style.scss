@@ -686,12 +686,23 @@ header{
 
                     }
 
-                    &-price{
-                        font-family: Pacifico;
-                        font-size: 20px;
-                        font-weight: 400;
-                        line-height: 36px;
-                        color: $text-color;
+                    &-subtitle{
+                        display: flex;
+                        align-items: center;
+                        
+
+                        &-price{
+                            font-family: Pacifico;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: $text-color;
+                        }
+
+                        & i {
+                            padding-left: 20px;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

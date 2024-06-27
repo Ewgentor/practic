@@ -62,9 +62,14 @@
                         <p class="card-text-name">
                             Микрозелень <br> {{el["name"]}}
                         </p>
-                        <p class="card-text-price">
-                            {{el["price"]}} Руб
-                        </p>
+                        <div class="card-text-subtitle">
+                            <p class="card-text-subtitle-price">
+                                {{el["price"]}} Руб
+                            </p>  
+                            <form action="">
+                                <i class="fa-solid fa-circle-plus fa-xl" style="color: #274C5B;"></i>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 {% endfor %}
