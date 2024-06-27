@@ -17,12 +17,11 @@ def index():
 @app.route("/catalog")
 def catalog():
     page = request.args.get('page', default=1, type=int)
-    products = [product for product in data.values()]
     per_page = 6
-    total_pages = len(products) // per_page + 1
+    total_pages = len(data) // per_page + 1
     start = (page - 1) * per_page
     end = start + per_page
-    paginated_products = products[start:end]
+    paginated_products = data[start:end]
     return render_template('catalog.html', products=paginated_products, total_pages=total_pages)
     # return render_template('catalog.html', data=data)
 
@@ -41,9 +40,9 @@ def page_not_found(e):
 def search_results():
     query = request.form['query']
     result = []
-    for el in data:
-        if query.lower() in data[el]['name'].lower():
-            result.append(data[el])
+    for product in data:
+        if query.lower() in product['name'].lower():
+            result.append(product)
     return render_template('search_results.html', result=result)
 
 
