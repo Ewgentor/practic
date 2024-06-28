@@ -6,11 +6,6 @@ $green: #80B857;
 
 
 
-
-
-
-
-
 %logo{
 
     display: flex;
@@ -88,6 +83,20 @@ $green: #80B857;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;
+}
+
+%line-h23{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+}
+
+%line-h18{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
 }
 
 %underline{
@@ -194,12 +203,7 @@ header{
 
                     & a{
                         color: $text-color;
-
-                        font-family: Roboto;
-                        font-size: 20px;
-                        font-weight: 700;
-                        line-height: 23.44px;
-
+                        @extend %libe-h23;
                         @extend %underline;
                     } 
                 }
@@ -306,10 +310,7 @@ header{
             background-color: $green;
             padding: 28px 39px 28px 39px;
 
-            font-family: Roboto;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 23.44px;
+            @extend %libe-h23;
             color: $text-color;
 
             border: none;
@@ -485,10 +486,7 @@ header{
                 gap: 10px;
                 border: none;
 
-                font-family: Roboto;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 23.44px;
+                @extend %libe-h23;
                 color: $white;
 
                 background-color: $text-color;
@@ -1034,6 +1032,161 @@ header{
 
 //Корзина//
 
+
 .cart{
+
+    &-all{
+        padding-top: 300px;
+    }
+
+    &-main{
+        margin: 0px 260px 57px 260px;
+        padding: 43px 90px 11px 146px;
+        border-radius: 30px;
+        background-color: #80B8574D;
+
+        &-title{
+            padding-bottom: 30px;
+
+            & .text{
+                font-family: Roboto;
+                font-size: 36px;
+                font-weight: 800;
+                line-height: 42.19px;
+                color: $text-color;
+                padding-bottom: 12px;
+            }
+
+            & .subtitle{
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28.13px;
+                color: #274C5BB2;
+
+            }
+        }
+
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+
+            & .card{
+                display: flex;
+                padding-bottom: 60px;
+
+                &-img{
+                    align-content: center;
+                }
     
+                &-text-all{
+                    align-content: center;
+                    padding-left: 33px;
+                    width: 360px;
+    
+                    & .card-text{
+                        padding-bottom: 48px;
+    
+                        & .card-title{
+                            @extend %line-h28;
+                            color: $text-color;
+                        }
+    
+                        & .card-subtitle{
+                            @extend %line-h18;
+                            color: #274C5BB2;
+    
+                            & p{
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+    
+                    & .card-control{
+                        display: flex;
+                        justify-content: space-between;
+    
+    
+                        & .card-plus{
+                            display: flex;
+                            align-items: center;
+    
+                            padding: 0px 23px 0px 10px;
+    
+                            & p{
+                                @extend %line-h28;
+                                color: $text-color;
+    
+                                padding: 0px 20px 0px 20px;
+                            }
+                        }
+    
+                        & .card-price{
+                            @extend %line-h28;
+                            color: $text-color;
+
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            & .cart-right-all-price{
+
+                align-content: center;
+
+                & .cart-right{
+                    background-color: $white;
+                    border-radius: 20px;
+                    padding: 25px;
+    
+                    &-title{
+                        padding: 0px 115px 30px 0px;
+                        
+                        & a{
+                            @extend %libe-h23;
+                            color: $text-color;
+    
+                            text-decoration: underline;
+                        }
+                    }
+    
+                    &-text{
+                        @extend %line-h18;
+                        color: #274C5B99;
+    
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 31px;
+                    }
+    
+                    &-subject{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 26px;
+    
+                        @extend %line-h28;
+                        color: $text-color;
+                    }
+    
+                    &-btn{
+                        display: flex;
+                        justify-content: center;
+    
+                        & button{
+                            @extend %libe-h23;
+                            color: $text-color;
+                            border-radius: 20px;
+                            border: none;
+    
+                            padding: 16px 45px 16px 46px;
+                            background-color: $green;
+                        }
+    
+                        @extend %shadowbtn;
+                    }
+                }
+            }
+        }
+    }
 }
