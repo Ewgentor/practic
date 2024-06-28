@@ -79,13 +79,6 @@
                                     </div>
                                 </div>
                                 <div class="card-control">
-                                    <div class="card-plus">
-                                        <i class="fa-solid fa-circle-minus fa-xl" style="color: #2c6ddd;"></i>
-                                        <p>
-                                            1
-                                        </p>
-                                        <i class="fa-solid fa-circle-plus fa-xl" style="color: #2c6ddd;"></i>
-                                    </div>
                                     <div class="card-price">
                                         <p>
                                             {{ product['price'] }} руб
@@ -106,12 +99,12 @@
                             <div class="cart-right-text">
                                 <div class="right-text-subtitle">
                                     <p>
-                                        Товары, 3шт.
+                                        Товары, {{ cart|count }} шт.
                                     </p>
                                 </div>
                                 <div class="right-text-price">
                                     <p>
-                                        450 руб
+                                        {{ cart|sum(attribute='price') }} руб
                                     </p>
                                 </div>
                             </div>
@@ -123,7 +116,7 @@
                                 </div>
                                 <div class="subject-sum">
                                     <p>
-                                        450 руб
+                                        {{ cart|sum(attribute='price') }} руб
                                     </p>
                                 </div>
                             </div>
