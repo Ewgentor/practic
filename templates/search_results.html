@@ -63,13 +63,15 @@
                             <p class="card-text-name">
                                 Микрозелень <br> {{el["name"]}}
                             </p>
-                            <p class="card-text-price">
-                                {{el["price"]}} Руб
-                            </p>
-                            <div class="card-text-subtitle-btn">
-                                <button class="add-to-cart-btn" data-product-id="{{ el['id'] }}">
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </button>
+                            <div class="card-text-subtitle">
+                                <p class="card-text-subtitle-price">
+                                    {{el["price"]}} Руб
+                                </p>
+                                <div class="card-text-subtitle-btn">
+                                    <button class="add-to-cart-btn" data-product-id="{{ el['id'] }}">
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
