@@ -1,10 +1,13 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, url_for, session, jsonify
+import datetime
 import json
 
 
 app = Flask(__name__)
+app.permanent_session_lifetime = datetime.timedelta(minutes=1)
 
-
+app.secret_key = b'0hLZKNwf_9urI.x5'
+session = session
 with open('static/db/products.json', encoding='utf-8') as f:
     data = json.load(f)['products']
 
@@ -26,15 +29,27 @@ def catalog():
     # return render_template('catalog.html', data=data)
 
 
+@app.route('/add_to_cart/<int:product_id>', methods=['POST'])
+def add_to_cart(product_id):
+    if 'cart' not in session:
+        session['cart'] = []
+    product = next((p for p in data if p['id'] == product_id), None)
+    if product:
+        session['cart'].append(product)
+        session.modified = True
+        return jsonify({'message': f'{product["name"]} добавлен(а) в корзину.'})
+    else:
+        return jsonify({'message': 'Товар не найден.'}), 404
+
+
 @app.route("/news")
 def news():
     return render_template('news.html')
 
 
-# Илья, иди нахуй
 @app.route("/cart")
 def cart():
-    return render_template('cart.html')
+    return render_template('cart.html', cart=session.get('cart', []))
 
 
 @app.errorhandler(404)

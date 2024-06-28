@@ -52,23 +52,23 @@
 
         <section class="catalog-section2 conteiner">
             <div class="cards">
-                {% for el in products %}
+                {% for product in products %}
                 <div class="card">
                     <div class="card-img">
-                        <img src={{el["img"]}} alt="">
+                        <img src={{product["img"]}} alt="">
                         <i class="fa-regular fa-heart fa-2xl" id="icon" ></i>
                     </div>
                     <div class="card-text">
                         <p class="card-text-name">
-                            Микрозелень <br> {{el["name"]}}
+                            Микрозелень <br> {{product["name"]}}
                         </p>
                         <div class="card-text-subtitle">
                             <p class="card-text-subtitle-price">
-                                {{el["price"]}} Руб
-                            </p>  
-                            <form action="">
-                                <i class="fa-solid fa-circle-plus fa-xl" style="color: #274C5B;"></i>
-                            </form>
+                                {{product["price"]}} Руб
+                            </p>
+                            <button class="add-to-cart-btn" data-product-id="{{ product['id'] }}">
+                                +
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -377,5 +377,22 @@ function show_hide_password(target, inputId) {
     return false;
 }
 </script>
-
+<script>
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', async function() {
+            const productId = this.dataset.productId;
+            try {
+                const response = await fetch(`/add_to_cart/${productId}`, { method: 'POST' });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                alert(data.message);
+            } catch (error) {
+                console.error('There was a problem with the fetch operation:', error);
+                alert('Произошла ошибка при добавлении товара в корзину.');
+            }
+        });
+   });
+</script>
 </html>

@@ -51,21 +51,22 @@
                     </div>
                     <div class="subtitle">
                         <p>
-                            3 товара
+                            Количество товаров: {{ cart|count }}
                         </p>
                     </div>
                 </div>
                 <div class="cart-main-bottom">
                     <div class="cart-left">
+                        {% for product in cart %}
                         <div class="card">
                             <div class="card-img">
-                                <img src="/static/img-cart/cart1.png" alt="">
+                                <img src="{{product['img']}}" alt="" style="height: 200px;width: 200px;border-radius: 20px;">
                             </div>
                             <div class="card-text-all">
                                 <div class="card-text">
                                     <div class="card-title">
                                         <p>
-                                            Микрозелень горох
+                                            Микрозелень {{ product['name'] }}
                                         </p>
                                     </div>
                                     <div class="card-subtitle">
@@ -87,84 +88,13 @@
                                     </div>
                                     <div class="card-price">
                                         <p>
-                                            150 руб
+                                            {{ product['price'] }} руб
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="/static/img-cart/cart1.png" alt="">
-                            </div>
-                            <div class="card-text-all">
-                                <div class="card-text">
-                                    <div class="card-title">
-                                        <p>
-                                            Микрозелень горох
-                                        </p>
-                                    </div>
-                                    <div class="card-subtitle">
-                                        <p>
-                                            Склад продавца
-                                        </p>
-                                        <p>
-                                            Только предоплата
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-control">
-                                    <div class="card-plus">
-                                        <i class="fa-solid fa-circle-minus fa-xl" style="color: #2c6ddd;"></i>
-                                        <p>
-                                            1
-                                        </p>
-                                        <i class="fa-solid fa-circle-plus fa-xl" style="color: #2c6ddd;"></i>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>
-                                            150 руб
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="/static/img-cart/cart1.png" alt="">
-                            </div>
-                            <div class="card-text-all">
-                                <div class="card-text">
-                                    <div class="card-title">
-                                        <p>
-                                            Микрозелень горох
-                                        </p>
-                                    </div>
-                                    <div class="card-subtitle">
-                                        <p>
-                                            Склад продавца
-                                        </p>
-                                        <p>
-                                            Только предоплата
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-control">
-                                    <div class="card-plus">
-                                        <i class="fa-solid fa-circle-minus fa-xl" style="color: #2c6ddd;"></i>
-                                        <p>
-                                            1
-                                        </p>
-                                        <i class="fa-solid fa-circle-plus fa-xl" style="color: #2c6ddd;"></i>
-                                    </div>
-                                    <div class="card-price">
-                                        <p>
-                                            150 руб
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                     <div class="cart-right-all-price">
                         <div class="cart-right">
