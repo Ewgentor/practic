@@ -4,7 +4,7 @@ import json
 
 
 app = Flask(__name__)
-app.permanent_session_lifetime = datetime.timedelta(minutes=1)
+app.permanent_session_lifetime = datetime.timedelta(minutes=5)
 
 app.secret_key = b'0hLZKNwf_9urI.x5'
 session = session

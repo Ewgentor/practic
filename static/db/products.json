@@ -32,7 +32,7 @@
     },
     {
       "id": 6,
-      "name": "Аморант",
+      "name": "Аморант1",
       "price": 150,
       "img": "/static/img-catalog/card1.png"
     },
@@ -44,115 +44,115 @@
     },
     {
       "id": 8,
-      "name": "Базилик",
+      "name": "Базилик1",
       "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
       "id": 9,
-      "name": "Горчица",
+      "name": "Горчица1",
       "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
       "id": 10,
-      "name": "Горох",
+      "name": "Горох1",
       "price": 150,
       "img": "/static/img-catalog/card3.png"
     },
     {
       "id": 11,
-      "name": "Дайкон",
+      "name": "Дайкон2",
       "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
       "id": 12,
-      "name": "Рукола",
+      "name": "Рукола1",
       "price": 150,
       "img": "/static/img-catalog/card6.png"
     },
     {
       "id": 13,
-      "name": "Рукола",
+      "name": "Рукола2",
       "price": 150,
       "img": "/static/img-catalog/card6.png"
     },
     {
       "id": 14,
-      "name": "Аморант",
+      "name": "Аморант2",
       "price": 150,
       "img": "/static/img-catalog/card1.png"
     },
     {
       "id": 15,
-      "name": "Базилик",
+      "name": "Базилик2",
       "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
       "id": 16,
-      "name": "Горох",
+      "name": "Горох2",
       "price": 150,
       "img": "/static/img-catalog/card3.png"
     },
     {
       "id": 17,
-      "name": "Горчица",
+      "name": "Горчица2",
       "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
       "id": 18,
-      "name": "Дайкон",
+      "name": "Дайкон3",
       "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
       "id": 19,
-      "name": "Аморант",
+      "name": "Аморант3",
       "price": 150,
       "img": "/static/img-catalog/card1.png"
     },
     {
       "id": 20,
-      "name": "Рукола",
+      "name": "Рукола3",
       "price": 150,
       "img": "/static/img-catalog/card6.png"
     },
     {
       "id": 21,
-      "name": "Базилик",
+      "name": "Базилик3",
       "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
       "id": 22,
-      "name": "Горчица",
+      "name": "Горчица3",
       "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
       "id": 23,
-      "name": "Горох",
+      "name": "Горох3",
       "price": 150,
       "img": "/static/img-catalog/card3.png"
     },
     {
       "id": 24,
-      "name": "Дайкон",
+      "name": "Дайкон4",
       "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
       "id": 25,
-      "name": "Рукола",
+      "name": "Рукола4",
       "price": 150,
       "img": "/static/img-catalog/card6.png"
     },
     {
       "id": 26,
-      "name": "Рукола",
+      "name": "Рукола5",
       "price": 150,
       "img": "/static/img-catalog/card6.png"
     }
