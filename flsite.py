@@ -12,6 +12,17 @@ with open('static/db/products.json', encoding='utf-8') as f:
     data = json.load(f)['products']
 
 
+def count_products(cart):
+    counts = {}
+    for item in cart:
+        item_id = item['id']
+        if item_id in counts:
+            counts[item_id] += 1
+        else:
+            counts[item_id] = 1
+    return counts
+
+
 @app.route("/")
 def index():
     return render_template('index.html')
@@ -49,7 +60,9 @@ def news():
 
 @app.route("/cart")
 def cart():
-    return render_template('cart.html', cart=session.get('cart', []))
+    cart = session.get('cart', [])
+    product_counts = count_products(cart)
+    return render_template('cart.html', cart=cart, product_counts=product_counts)
 
 
 @app.errorhandler(404)

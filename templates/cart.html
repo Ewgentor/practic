@@ -108,18 +108,21 @@
                                     </p>
                                 </div>
                             </div>
+                            {% for product_id, count in product_counts.items() %}
+                            {% set product = cart | selectattr('id', 'eq', product_id) | list | first %}
                             <div class="cart-right-text">
                                 <div class="right-text-subtitle">
                                     <p>
-                                        Микрозелень аморант, {{ cart|count }} шт.
+                                        Микрозелень {{ product.name }}, {{ count }} шт.
                                     </p>
                                 </div>
                                 <div class="right-text-price">
                                     <p>
-                                        {{ cart|sum(attribute='price') }} руб
+                                        {{ product['price']*count }} руб
                                     </p>
                                 </div>
                             </div>
+                            {% endfor %}
                             <div class="cart-right-subject">
                                 <div class="subject-itogo">
                                     <p>

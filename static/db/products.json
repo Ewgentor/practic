@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "Базилик",
-      "price": 150,
+      "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
@@ -21,13 +21,13 @@
     {
       "id": 4,
       "name": "Горчица",
-      "price": 150,
+      "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
       "id": 5,
       "name": "Дайкон",
-      "price": 150,
+      "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
@@ -45,13 +45,13 @@
     {
       "id": 8,
       "name": "Базилик",
-      "price": 150,
+      "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
       "id": 9,
       "name": "Горчица",
-      "price": 150,
+      "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": 11,
       "name": "Дайкон",
-      "price": 150,
+      "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": 15,
       "name": "Базилик",
-      "price": 150,
+      "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
@@ -99,13 +99,13 @@
     {
       "id": 17,
       "name": "Горчица",
-      "price": 150,
+      "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
       "id": 18,
       "name": "Дайкон",
-      "price": 150,
+      "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
@@ -123,13 +123,13 @@
     {
       "id": 21,
       "name": "Базилик",
-      "price": 150,
+      "price": 250,
       "img": "/static/img-catalog/card2.png"
     },
     {
       "id": 22,
       "name": "Горчица",
-      "price": 150,
+      "price": 125,
       "img": "/static/img-catalog/card4.png"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": 24,
       "name": "Дайкон",
-      "price": 150,
+      "price": 750,
       "img": "/static/img-catalog/card5.png"
     },
     {
