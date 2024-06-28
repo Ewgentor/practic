@@ -108,6 +108,18 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="cart-right-text">
+                                <div class="right-text-subtitle">
+                                    <p>
+                                        Микрозелень аморант, {{ cart|count }} шт.
+                                    </p>
+                                </div>
+                                <div class="right-text-price">
+                                    <p>
+                                        {{ cart|sum(attribute='price') }} руб
+                                    </p>
+                                </div>
+                            </div>
                             <div class="cart-right-subject">
                                 <div class="subject-itogo">
                                     <p>

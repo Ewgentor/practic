@@ -203,7 +203,7 @@ header{
 
                     & a{
                         color: $text-color;
-                        @extend %libe-h23;
+                        @extend %line-h23;
                         @extend %underline;
                     } 
                 }
@@ -310,7 +310,7 @@ header{
             background-color: $green;
             padding: 28px 39px 28px 39px;
 
-            @extend %libe-h23;
+            @extend %line-h23;
             color: $text-color;
 
             border: none;
@@ -486,7 +486,7 @@ header{
                 gap: 10px;
                 border: none;
 
-                @extend %libe-h23;
+                @extend %line-h23;
                 color: $white;
 
                 background-color: $text-color;
@@ -688,18 +688,29 @@ header{
                         display: flex;
                         align-items: center;
                         
-
                         &-price{
                             font-family: Pacifico;
                             font-size: 20px;
                             font-weight: 400;
                             line-height: 36px;
                             color: $text-color;
+
                         }
 
-                        & i {
+                        &-btn{
                             padding-left: 20px;
-                            cursor: pointer;
+
+                            & button{
+                                background-color: $green;
+                                border: none;
+                                cursor: pointer;
+                                scale: 2;
+                                color: #274C5B;
+
+                                &:hover{
+                                    color: #4c77c2;
+                                }
+                            } 
                         }
                     }
                 }
@@ -1144,7 +1155,7 @@ header{
                         padding: 0px 115px 30px 0px;
                         
                         & a{
-                            @extend %libe-h23;
+                            @extend %line-h23;
                             color: $text-color;
     
                             text-decoration: underline;
@@ -1174,7 +1185,7 @@ header{
                         justify-content: center;
     
                         & button{
-                            @extend %libe-h23;
+                            @extend %line-h23;
                             color: $text-color;
                             border-radius: 20px;
                             border: none;

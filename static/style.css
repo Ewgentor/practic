@@ -67,6 +67,20 @@
   line-height: 28.13px;
 }
 
+.cart-main-bottom .cart-right-all-price .cart-right-btn button, .cart-main-bottom .cart-right-all-price .cart-right-title a, .subscribe .slogan .widgets button, .section1 .title .btn, header .logo-nav .navbar ul li a {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+
+.cart-main-bottom .cart-right-all-price .cart-right-text, .cart-main-bottom .card-text-all .card-text .card-subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+}
+
 .sign-in .popup .popup-content .excerpt a, .footer .contacts .footer-subtitle .underline, header .logo-nav .navbar ul li a {
   position: relative;
   text-decoration: none;
@@ -150,10 +164,6 @@ header .logo-nav .navbar ul li img {
 }
 header .logo-nav .navbar ul li a {
   color: #274C5B;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
 }
 header .search-contact {
   display: flex;
@@ -232,10 +242,6 @@ header .search-contact .contact a {
   cursor: pointer;
   background-color: #80B857;
   padding: 28px 39px 28px 39px;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
   color: #274C5B;
   border: none;
   border-radius: 16px;
@@ -358,10 +364,6 @@ header .search-contact .contact a {
   border-radius: 16px;
   gap: 10px;
   border: none;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
   color: #ffffff;
   background-color: #274C5B;
 }
@@ -500,9 +502,18 @@ header .search-contact .contact a {
   line-height: 36px;
   color: #274C5B;
 }
-.catalog-section2 .cards .card-text-subtitle i {
+.catalog-section2 .cards .card-text-subtitle-btn {
   padding-left: 20px;
+}
+.catalog-section2 .cards .card-text-subtitle-btn button {
+  background-color: #80B857;
+  border: none;
   cursor: pointer;
+  scale: 2;
+  color: #274C5B;
+}
+.catalog-section2 .cards .card-text-subtitle-btn button:hover {
+  color: #4c77c2;
 }
 .catalog-section2 .cards .error-found {
   font-family: Roboto;
@@ -771,10 +782,6 @@ header .search-contact .contact a {
   color: #274C5B;
 }
 .cart-main-bottom .card-text-all .card-text .card-subtitle {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18.75px;
   color: rgba(39, 76, 91, 0.6980392157);
 }
 .cart-main-bottom .card-text-all .card-text .card-subtitle p {
@@ -809,18 +816,10 @@ header .search-contact .contact a {
   padding: 0px 115px 30px 0px;
 }
 .cart-main-bottom .cart-right-all-price .cart-right-title a {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
   color: #274C5B;
   text-decoration: underline;
 }
 .cart-main-bottom .cart-right-all-price .cart-right-text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18.75px;
   color: rgba(39, 76, 91, 0.6);
   display: flex;
   justify-content: space-between;
@@ -837,10 +836,6 @@ header .search-contact .contact a {
   justify-content: center;
 }
 .cart-main-bottom .cart-right-all-price .cart-right-btn button {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.44px;
   color: #274C5B;
   border-radius: 20px;
   border: none;
